@@ -1,3 +1,14 @@
+.animated {
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 @-webkit-keyframes tagEnter {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -42,4 +53,55 @@
 .tagEnter:nth-child(3n+0) {
   -webkit-animation-delay: 500ms;
   animation-delay: 500ms;
+}
+
+@-webkit-keyframes winkOnce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes winkOnce {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(0.9);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-o-keyframes winkOnce {
+  0% {
+    -o-transform: scale(1);
+  }
+  50% {
+    -o-transform: scale(0.9);
+  }
+  100% {
+    -o-transform: scale(1);
+  }
+}
+@keyframes winkOnce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animated.winkOnce {
+  -webkit-animation-name: winkOnce;
+  -moz-animation-name: winkOnce;
+  -o-animation-name: winkOnce;
+  animation-name: winkOnce;
 }

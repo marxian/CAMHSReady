@@ -26,12 +26,14 @@
 		</ul>
 		</form>
 	   </div>
-		<div class="center">
-			<a rel="prev" class="with-icon button" data-ng-click="focusTitle()" href="#/picker">
-				<span>Pick another topic</span>
-				<span class="icon-pencil round-icon"></span>
-			</a>					
-		</div>
+			<div data-ng-show="activeTag" class="center">
+				<a rel="prev" class="with-icon button" data-ng-click="focusTitle()" href="#/picker">
+					<span>Pick another topic</span>
+				</a>					
+			</div>
+			<div data-ng-hide="activeTag" class="center">
+				<a rel="next" class="with-icon button" href="#/checklist"><span>View my checklist</span></a>
+			</div>
 	</div>
   </div>
 </div>

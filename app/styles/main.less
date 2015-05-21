@@ -1437,24 +1437,20 @@ iframe {
 */
 
 @-webkit-keyframes enter {
-	0%, 100% {
-		-webkit-transform: scale(1);
-		        transform: scale(1);
+	0% {
+		opacity: 0;
 	}
-	50% {
-		-webkit-transform: scale(1.125);
-		        transform: scale(1.125);
+	100% {
+		opacity: 1;
 	}
 }
 
 @keyframes enter {
-	0%, 100% {
-		-webkit-transform: scale(1);
-		        transform: scale(1);
+	0% {
+		opacity: 0;
 	}
-	50% {
-		-webkit-transform: scale(1.125);
-		        transform: scale(1.125);
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -1462,8 +1458,11 @@ iframe {
 	text-align: left;
 	padding: 2.25em 1.5em;
 	background: @font-color;
-	-webkit-animation: enter 0.75s ease-out 1;
-	        animation: enter 0.75s ease-out 1
+}
+
+.intro h1 {
+	-webkit-animation: enter 1s ease-out 1;
+        animation: enter 1s ease-out 1;
 }
 
 .intro > h1, .intro > img {

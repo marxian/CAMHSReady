@@ -3,9 +3,12 @@
 angular.module('docready')
   .controller('ExportCtrl', function ($scope, settings, symptomService, $window, $http, $resource, $timeout, Analytics, $location, supplementary_content, custom_config) {
     var Email = $resource(settings.apiRoot + '/email');
+    var SMS = $resource(settings.apiRoot + '/sms');
     $scope.selections = symptomService.selections;
     $scope.settings = settings;
     $scope.showMailer = false;
+    $scope.smsEnabled = custom_config.sms;
+    $scope.showSMS = false;
     $scope.app_domain = custom_config.app_domain;
     $scope.supplementary = _.filter(supplementary_content, function(s){ return s.answer;});
 
@@ -40,6 +43,24 @@ angular.module('docready')
       checklistDownloadLink.href = checklistPdfLink;
       console.log(checklistDownloadLink.href);
       checklistDownloadLink.click();
+    };
+
+    $scope.prepareSMS = function(){
+      $scope.showSMS = !$scope.showSMS;
+      $scope.sms = new SMS({
+        recipient: '',
+        symptoms: _.chain(symptomService.exportSymptoms()).pluck('title').value(),
+        supplementary: $scope.supplementary
+      });
+    };
+
+    $scope.sendSMS = function(){
+      $scope.sms.state = 'sending';
+      $scope.sms.$save(function(){
+        $scope.sms.state = 'sent';
+        // close the send dialog after showing the sent state for a while
+        $timeout(function(){ $scope.showSMS = false; }, 1000);
+      });
     };
 
     $scope.permalink = function(){

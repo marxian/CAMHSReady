@@ -8,6 +8,7 @@
 			<button class="icon-download" data-ng-click="track('download');getpdf()">Download</button>
 			<a id="checklistDownloadLink" aria-hidden="true" ng-hide="true"></a>
 			<button class="icon-email" data-ng-click="prepareMail()">Email</button>
+			<button data-ng-if="smsEnabled" class="icon-sms" data-ng-click="prepareSMS()">SMS</button>
 		</div>
 		<img tabindex="0" class="a11y-hide" src="images/howitworks_2.png" alt="Preview image of your checklist export file" />
 		<div data-ng-show="showMailer"  style="display:none" data-ng-animate="{show:'animated fadeInDown', hide:'animated fadeOutUp'}">
@@ -35,6 +36,30 @@
 									data-ng-click="track('email');sendEmail()" 
 									data-ng-switch="email.state" 
 									data-ng-class="email.state">
+						<span data-ng-switch-when="sending">Sending</span>
+						<span data-ng-switch-when="sent">Sent</span>
+						<span data-ng-switch-default>Send</span>
+					</button>
+				</div>
+			</form>
+		</div>
+		<div data-ng-show="showSMS"  style="display:none" data-ng-animate="{show:'animated fadeInDown', hide:'animated fadeOutUp'}">
+			<form name="smser">
+				<div class="group-top">
+					<div>
+						<div>
+							<label>
+								<span>Enter your phone number:</span>
+								<input type="text" name="recipient" data-ng-model="sms.recipient" data-ng-required="true"/>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="button-group center">
+					<button data-ng-disabled="smser.$invalid" 
+									data-ng-click="track('sms');sendSMS()" 
+									data-ng-switch="sms.state" 
+									data-ng-class="sms.state">
 						<span data-ng-switch-when="sending">Sending</span>
 						<span data-ng-switch-when="sent">Sent</span>
 						<span data-ng-switch-default>Send</span>

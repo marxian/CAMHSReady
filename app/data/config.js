@@ -6,5 +6,7 @@ angular.module('docready').constant('custom_config', {
   "mailer_from":  "hello@camhsready.org",
   "mailer_subject": "CAMHSReady Checklist",
   "feedback_to": "rupert@neontribe.co.uk",
-  "feedback_subject": "CAMHSReady Feedback"
+  "feedback_subject": "CAMHSReady Feedback",
+  "sms": true,
+  "sms_from": "CAMHSReady"
 });

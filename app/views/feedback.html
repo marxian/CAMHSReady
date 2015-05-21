@@ -6,8 +6,20 @@
     <h2>Let us know what you think</h2>
     <form name="feedbackform" data-ng-submit="sendFeedback()">
       
-      <label for="referral">How did you hear about CAMHSReady?</label>
-      <input type="text" id="referral" data-ng-model="feedback.referral" />
+      <div>
+        <label for="referral">How did you hear about CAMHSReady?</label>
+        <select id="referral" data-ng-model="feedback.referral">
+          <option value="Family">Family</option>
+          <option value="Doctor">Doctor</option>
+          <option value="School Nurse or Counsellor">School Nurse or Counsellor</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Friend">Friend</option>
+          <option value="Internet">Internet</option>
+          <option value="Leaflets">Leaflets</option>
+          <option value="Other: ">Other (please specify)</option>
+        </select>
+        <input type="text" data-ng-show="feedback.referral.indexOf('Other') === 0" data-ng-model="feedback.referral" />
+      </div>
       <label for="appointment">
         <input type="checkbox" id="appointment" data-ng-model="feedback.appointment" /> 
         Do you have an appointment with Stoke CAMHS?
@@ -15,8 +27,11 @@
       <div>
         <label for="usefulness">How useful did you find CAMHSReady?</label>
         <select id="usefulness" data-ng-model="feedback.usefulness">
-          <option value="very">Very</option>
-          <option value="not at all">Not at all</option>
+          <option value="5">Extremely</option>
+          <option value="4">Very</option>
+          <option value="3">Moderately</option>
+          <option value="2">Slightly</option>
+          <option value="1">Not at all</option>
         </select>
       </div>
 

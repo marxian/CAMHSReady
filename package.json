@@ -1,7 +1,7 @@
 {
   "name": "camhsready",
   "description": "CAMHS Ready helps you get ready for the first time you visit a doctor to discuss your mental health.",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Rupert Redington <rupert@neontribe.co.uk>",
   "bugs": {
     "url": "https://github.com/marxian/CAMHSReady/issues"

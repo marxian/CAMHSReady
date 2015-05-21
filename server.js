@@ -64,7 +64,7 @@ app.post('/api/email', function(req, res){
       'TextBody': text
     }, function(error, success){
       if (error) {
-        res.status(500).send(error.message);
+        return res.status(500).send(error.message);
       }
       res.sendStatus(200);
     });
@@ -85,7 +85,7 @@ app.post('/api/feedback', function(req, res){
       'TextBody': text
     }, function(error, success){
       if (error) {
-        res.status(500).send(error.message);
+        return res.status(500).send(error.message);
       }
       res.sendStatus(200);
     });
@@ -104,7 +104,7 @@ app.get('/api/pdf', function(req, res){
       }
       conversion({ html: html }, function(err, pdf) {
         if (err) {
-          res.status(500).send(err.message);
+          return res.status(500).send(err.message);
         }
         res.attachment('checklist.pdf');
         pdf.stream.pipe(res);

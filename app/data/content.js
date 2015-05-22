@@ -359,7 +359,8 @@ angular.module('docready').value('symptoms_content', [
       "worries"
     ]
   }
-]);angular.module('docready').value('advice_content', [
+]);
+angular.module('docready').value('advice_content', [
   {
     "title": "What is CAMHS?",
     "slug": "what-is-camhs",
@@ -439,9 +440,9 @@ angular.module('docready').value('symptoms_content', [
     "topic": "what-should-i-do-before-my-first-visit"
   },
   {
-    "title": "CAMHSReady and your privacy",
+    "title": "<strong>Note</strong> and your privacy",
     "slug": "camhsready-and-your-privacy",
-    "body": "<p>CAMHSReady doesn't store anything that we or anyone else can link to you. Nothing stays on the server and nothing stays on your phone or computer.</p><p>We do use Google Analytics to help us measure how we're doing and improve the site, but that data isn't linked to you in any way.</p><p>You can choose to email your checklist to yourself, or to download it, or to print it, and what you do with it then is up to you. We don't even store items people add to their checklists, just the topics people look at.</p><p>If you have any other questions or concerns about your privacy when using CAMHSReady, please <a href=\"#/contact\">contact us</a></p>",
+    "body": "<p><strong>Note</strong> doesn't store anything that we or anyone else can link to you. Nothing stays on the server and nothing stays on your phone or computer.</p><p>We do use Google Analytics to help us measure how we're doing and improve the site, but that data isn't linked to you in any way.</p><p>You can choose to email your checklist to yourself, or to download it, or to print it, and what you do with it then is up to you. We don't even store items people add to their checklists, just the topics people look at.</p><p>If you have any other questions or concerns about your privacy when using <strong>Note</strong>, please <a href=\"#/contact\">contact us</a></p>",
     "topic": "what-should-i-do-before-my-first-visit"
   },
   {
@@ -535,7 +536,8 @@ angular.module('docready').value('symptoms_content', [
     "topic": "who-works-at-camhs"
   }
 ]
-);angular.module('docready').value('advice_topics_content', [
+);
+angular.module('docready').value('advice_topics_content', [
   {
     "title": "What is CAMHS?",
     "slug": "what-is-camhs"
@@ -580,7 +582,8 @@ angular.module('docready').value('symptoms_content', [
     "title": "Who works at CAMHS?",
     "slug": "who-works-at-camhs"
   }
-]);angular.module('docready').value('supplementary_content', [
+]);
+angular.module('docready').value('supplementary_content', [
   {
     "id": "reflections",
     "title": "Reflections on my checklist",

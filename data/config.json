@@ -1,12 +1,12 @@
 {
   "ga_code": "pending",
-  "app_name": "CAMHSReady",
-  "app_domain": "CAMHSReady.org",
+  "app_name": "Note",
+  "app_domain": "note.org.uk",
   "baseUrl": "http://camhsready.herokuapp.com",
-  "mailer_from":  "hello@camhsready.org",
-  "mailer_subject": "CAMHSReady Checklist",
+  "mailer_from":  "hello@note.org.uk",
+  "mailer_subject": "Note Checklist",
   "feedback_to": "rupert@neontribe.co.uk",
-  "feedback_subject": "CAMHSReady Feedback",
+  "feedback_subject": "Note Feedback",
   "sms": true,
-  "sms_from": "CAMHSReady"
+  "sms_from": "Note"
 }

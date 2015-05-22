@@ -1,0 +1,8 @@
+{{#each symptoms}}
+{{math @index "+" 1}}. {{{this}}}
+
+{{/each}}
+{{#each supplementary}}
+Note: {{{this.answer}}}
+
+{{/each}}

@@ -7,6 +7,8 @@ var app = express();
 var dev = app.get('env') === 'development';
 var config = require('./data/config.json');
 var postmark = require('postmark');
+var querystring = require('querystring');
+var B = require('bluebird');
 
 var mailer = new postmark.Client(process.env.POSTMARK_API_KEY || 'dev');
 var bodyParser = require('body-parser');
@@ -95,14 +97,25 @@ app.post('/api/feedback', function(req, res){
 
 if (config.sms) {
   var nexmo = require('easynexmo');
-  nexmo.initialize(process.env.NEXMO_KEY, process.env.NEXMO_SECRET, 'https', process.env.NODE_EN !== 'production');
-
+  nexmo.initialize(process.env.NEXMO_KEY, process.env.NEXMO_SECRET, 'https', process.env.NODE_ENV !== 'production');
   app.post('/api/sms', function(req, res){
-    nexmo.sendTextMessage(config.sms_from, req.body.recipient, 'test44', {}, function(err, response){
-      if (err) {
-        return res.sendStatus(500).send(err);
+    var send = B.promisify(nexmo.sendTextMessage, nexmo);
+    // Format phone number
+    var recipient = req.body.recipient.replace(/\s/g, '');
+    recipient = recipient.replace(/^\+/, '');
+    recipient = recipient.replace(/^0/, '44');
+    app.render('sms', req.body, function(err, text){
+      var msgs = [text];
+      if (querystring.stringify(text).length > 3600) {
+        msgs = text.split('\n');
       }
-      res.sendStatus(200);
+      B.all(msgs.map(function(msg){
+        return send(config.sms_from, recipient, msg, {});
+      })).then(function(){
+        res.sendStatus(200);
+      }).catch(function(err){
+        res.sendStatus(500).send(err);
+      })
     });
   });
 }

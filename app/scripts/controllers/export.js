@@ -14,6 +14,7 @@ angular.module('docready')
 
     $scope.prepareMail = function(){
       $scope.showMailer = !$scope.showMailer;
+      $scope.showSMS = false;
       $scope.email = new Email({
         recipient: '',
         symptoms: _.chain(symptomService.exportSymptoms()).pluck('title').value(),
@@ -47,6 +48,7 @@ angular.module('docready')
 
     $scope.prepareSMS = function(){
       $scope.showSMS = !$scope.showSMS;
+      $scope.showMailer = false;
       $scope.sms = new SMS({
         recipient: '',
         symptoms: _.chain(symptomService.exportSymptoms()).pluck('title').value(),

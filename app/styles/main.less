@@ -1638,6 +1638,10 @@ h3 span[class^="icon-"] + span {
 ----------------------------------------------------------------------
 */
 
+#export {
+	margin-top: 1.5em;
+}
+
 #export li {
 	list-style: none;
 	margin-bottom: 0.5em;
@@ -1709,7 +1713,8 @@ h3 span[class^="icon-"] + span {
 form[name="mailer"], form[name="smser"], form[name="pcsearch"] {
 	background-color: @blue-color-lighter;
 	padding: @v-space; 
-	border-radius: 30px;
+	border-radius: 10px;
+	margin-top: 0.5em;
 }
 
 form[name="mailer"], form[name="smser"] label {
@@ -1718,12 +1723,15 @@ form[name="mailer"], form[name="smser"] label {
 
 form[name="mailer"], form[name="smser"] label > span {
 	display: block;
-	padding: 0 0 @v-space/1.5 10px;
 	text-align: left;
 }
 
 form[name="mailer"], form[name="smser"] input {
 	font-size: inherit;
+}
+
+form label span {
+	padding-left: 0;
 }
 
 #export h1 + p {

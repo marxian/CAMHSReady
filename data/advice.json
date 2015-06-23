@@ -232,5 +232,11 @@
     "slug": "receptionist",
     "body": "<p>Receptionists are responsible for keeping CAMHS running. They manage appointments, maintain clients’ details and even make the tea. Receptionists are especially good at creating an environment that’s friendly, organised and welcoming.</p>",
     "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Where is North Staffordshire CAMHS?",
+    "slug": "where-is-camhs",
+    "body": "<p>North Staffordshire CAMHS is based across four different sites in the region.</p><p>The CAMHS team try their hardest to see you at the location that suits you best. This could be the one nearest to your home or school. When you or your parents/carer book your appointment you will be told which location to go to.</p><p>Click on the name of a CAMHS site below to show its location on Google Maps. You can use this to get directions to the site, as well as using streetview to see images of the buildings.</p><p><a href=\"https://www.google.co.uk/maps/place/Connect+Camhs+%26+First+Steps/@53.05951,-2.2146417,15z/data=!4m2!3m1!1s0x0:0xb387a03dcc19edfd\">Tunstall</a> - CAMHS and First Steps Building , Roundwell Street, Tunstall, ST6 5JJ</p><p><a href=\"https://www.google.co.uk/maps/place/Ashlands+Mental+Health+Resource+Centre/@53.011866,-2.220874,17z/data=!3m1!4b1!4m2!3m1!1s0x487a6808d85d29b3:0x6d6fa51c038a831c\">Newcastle</a> - Ashlands Mental Health Resource Centre, 35 North Street, Newcastle, ST5 1AZ</p>",
+    "topic": "where-is-camhs"
   }
 ]

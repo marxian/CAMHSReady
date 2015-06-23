@@ -359,8 +359,7 @@ angular.module('docready').value('symptoms_content', [
       "worries"
     ]
   }
-]);
-angular.module('docready').value('advice_content', [
+]);angular.module('docready').value('advice_content', [
   {
     "title": "What is CAMHS?",
     "slug": "what-is-camhs",
@@ -536,8 +535,7 @@ angular.module('docready').value('advice_content', [
     "topic": "who-works-at-camhs"
   }
 ]
-);
-angular.module('docready').value('advice_topics_content', [
+);angular.module('docready').value('advice_topics_content', [
   {
     "title": "What is CAMHS?",
     "slug": "what-is-camhs"
@@ -582,8 +580,7 @@ angular.module('docready').value('advice_topics_content', [
     "title": "Who works at CAMHS?",
     "slug": "who-works-at-camhs"
   }
-]);
-angular.module('docready').value('supplementary_content', [
+]);angular.module('docready').value('supplementary_content', [
   {
     "id": "reflections",
     "title": "Reflections on my checklist",

@@ -1969,15 +1969,32 @@ form[name="pcsearch"] strong {
 
 }
 
-@media print {
+@media all {
 
 	.no-print {
 		display: none;
 	}
 
 	#export {
+		font-size: 12pt;
+	}
+
+	#export h1 {
+	  font-size: 16pt;
+	}
+
+	#export h1 + p em {
+	  font-size: 10pt;
+	}
+
+	#export {
 		padding: 0;
 		border: 0;
+	}
+
+	#export h2 {
+		font-size: 12pt;
+		font-weight: bold;
 	}
 	
 	#export section {

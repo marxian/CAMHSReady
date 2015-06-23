@@ -172,5 +172,65 @@
     "slug": "cognitive-behavioural-therapist",
     "body": "<p>Cognitive behavioural therapists work together with people to help them learn new skills and feel more in control of their lives. CBT is especially useful in lots of circumstances, especially when people are dealing with depression, anxiety, obsessive-compulsive disorder and phobias.</p>",
     "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Psychological Therapist",
+    "slug": "psychological-therapist",
+    "body": "<p>Psychological therapists help people recognise their emotions, as well as how those emotions affect thoughts and actions. This type of therapy is especially useful for helping people be kinder to themselves and find better ways of dealing with difficult situations.</p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Art Therapist",
+    "slug": "art-therapist",
+    "body": "<p>Art therapists use a variety of artistic activities, including painting, drawing and collages to explore how people feel in a non-threatening way. You don’t have to be good at art to benefit from this type of therapy; it’s very useful for helping anyone who finds it difficult to talk about they feel.</p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Drama Therapist",
+    "slug": "drama-therapist",
+    "body": "<p>Drama therapists use acting and play to help people explore relationships and think about things from others’ perspectives. This type of therapy can be especially useful for families or people who struggle to talk about the things they’re feeling.</p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Psychological Parenting and Play Specialist (PPP)",
+    "slug": "psychological-parenting-and-play-specialist",
+    "body": "<p>CAMHS doesn’t just work with young people. PPP specialists play an important role: they can take the skills parents already have and develop them, helping them deal with the challenges of being a parent. This type of therapy can be especially useful for families with parents who are dealing with their own difficulties</p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Systemic Family Practitioner",
+    "slug": "systemic-family-practitioner",
+    "body": "<p>Systemic family practitioners help families discover their strengths and find new ways to support one another. This type of therapy can be especially useful for families who are interested in working together to become closer, happier, and stronger.</p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Clinical Psychologist",
+    "slug": "clinical-psychologist",
+    "body": "<p>Because of their extensive training, clinical psychologists are able to draw on a wide variety of skills. This makes them especially helpful in circumstances where one person might benefit from lots of different approaches.</p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "CAMHS Mental Health Worker",
+    "slug": "camhs-mental-health-worker",
+    "body": "<p></p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Psychologist",
+    "slug": "psychologist",
+    "body": "<p></p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Specialist Nurse",
+    "slug": "specialist-nurse",
+    "body": "<p></p>",
+    "topic": "who-works-at-camhs"
+  },
+  {
+    "title": "Receptionist",
+    "slug": "receptionist",
+    "body": "<p>Receptionists are responsible for keeping CAMHS running. They manage appointments, maintain clients’ details and even make the tea. Receptionists are especially good at creating an environment that’s friendly, organised and welcoming.</p>",
+    "topic": "who-works-at-camhs"
   }
 ]

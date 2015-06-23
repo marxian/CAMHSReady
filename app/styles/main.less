@@ -1820,6 +1820,10 @@ ol.group-center li + li {
 
 @media all and (max-width: 710px) {
 
+input[placeholder] { text-overflow: ellipsis; font-size: 0.75em; }
+::-moz-placeholder { text-overflow: ellipsis; font-size: 0.75em; } /* firefox 19+ */
+input:-moz-placeholder { text-overflow: ellipsis; font-size: 0.75em; }
+
 body {
 	font-size: 16px;
 	margin-bottom: 0;
@@ -1859,12 +1863,8 @@ body * + * {
 
 .tags a {
 	font-size: 1.125em;
-	padding: 0.25em 0.5em;
-}
-
-.with-icon, .with-icon:hover {
-	font-size: 18px;
-	line-height: 1.1;
+	padding: 0.5em 0.5em;
+	margin: 0;
 }
 
 .round-icon, .round-icon:hover {
@@ -1969,7 +1969,7 @@ form[name="pcsearch"] strong {
 
 }
 
-@media all {
+@media print {
 
 	.no-print {
 		display: none;

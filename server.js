@@ -96,7 +96,7 @@ app.post('/api/feedback', function(req, res){
   });
 });
 
-if (config.sms) {
+if (config.sms && process.env.NEXMO_KEY && process.env.NEXMO_SECRET) {
   var nexmo = require('easynexmo');
   nexmo.initialize(process.env.NEXMO_KEY, process.env.NEXMO_SECRET, 'https', process.env.NODE_ENV !== 'production');
   app.post('/api/sms', function(req, res){

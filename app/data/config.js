@@ -1,12 +1,12 @@
 angular.module('docready').constant('custom_config', {
   "ga_code": "pending",
-  "app_name": "Note",
-  "app_domain": "note.org.uk",
+  "app_name": "CAMHSReady",
+  "app_domain": "CAMHSReady.org",
   "baseUrl": "http://camhsready.herokuapp.com",
-  "mailer_from":  "hello@note.org.uk",
-  "mailer_subject": "Note Checklist",
+  "mailer_from":  "hello@camhsready.org",
+  "mailer_subject": "CAMHSReady Checklist",
   "feedback_to": "rupert@neontribe.co.uk",
-  "feedback_subject": "Note Feedback",
+  "feedback_subject": "CAMHSReady Feedback",
   "sms": true,
-  "sms_from": "Note"
+  "sms_from": "CAMHSReady"
 });

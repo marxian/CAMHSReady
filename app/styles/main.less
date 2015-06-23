@@ -1743,230 +1743,234 @@ dl.contenteditable {
 
 @media all and (max-width: 1200px) {
 	
-[role="contentinfo"] {
-	position: static;
-}
+	[role="contentinfo"] {
+		position: static;
+	}
 
 }
 
 @media all and (max-width: 1025px) {
 
-[role="banner"] h1 {
-	width: 40%;
-}
+	[role="banner"] h1 {
+		width: 40%;
+	}
 
-[role="banner"] nav {
-	width: 59%;
-}
+	[role="banner"] nav {
+		width: 59%;
+	}
 
 }
 
 @media all and (max-width: 910px) {
 
-body {
-	margin-top: 0;
-}
+	body {
+		margin-top: 0;
+	}
 
-.intro, .content {
-	padding-left: @v-space/2;
-	padding-right: @v-space/2;
-}
+	.intro, .content {
+		padding-left: @v-space/2;
+		padding-right: @v-space/2;
+	}
 
-[role="banner"] {
-	position: relative;
-}
+	[role="banner"] {
+		position: relative;
+	}
 
-.tags {
-	padding: 0 @v-space/2;
-}
+	.tags {
+		padding: 0 @v-space/2;
+	}
 
-}
+	}
 
-@media (max-width: 750px) {
-	
-[role="banner"] h1 {
-	padding-bottom: 0;
-}
+	@media (max-width: 750px) {
+		
+	[role="banner"] h1 {
+		padding-bottom: 0;
+	}
 
-.intro h1 {
-	text-align: center;
-	padding: 0.5em;
-}
+	.intro h1 {
+		text-align: center;
+		padding: 0.5em;
+	}
 
-[role="banner"] h1, [role="banner"] nav, [role="banner"] nav ul {
-	display: block;
-	width: auto;
-	text-align: center;
-}
+	[role="banner"] h1, [role="banner"] nav, [role="banner"] nav ul {
+		display: block;
+		width: auto;
+		text-align: center;
+	}
 
-[role="banner"] nav {
-	padding: 0.5em;
-	padding-top: 0;
-}
+	[role="banner"] nav {
+		padding: 0.5em;
+		padding-top: 0;
+	}
 
-header nav li {
-	margin: 0.5em;
-}
+	header nav li {
+		margin: 0.5em;
+	}
 
-ol.group-center div {
-	margin: 0;
-}
+	ol.group-center div {
+		margin: 0;
+	}
 
-ol.group-center li + li {
-	margin-top: 1.5em;
-}
+	ol.group-center li + li {
+		margin-top: 1.5em;
+	}
 
 }
 
 @media all and (max-width: 710px) {
 
-input[placeholder] { text-overflow: ellipsis; font-size: 0.75em; }
-::-moz-placeholder { text-overflow: ellipsis; font-size: 0.75em; } /* firefox 19+ */
-input:-moz-placeholder { text-overflow: ellipsis; font-size: 0.75em; }
+	body {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
 
-body {
-	font-size: 16px;
-	margin-bottom: 0;
+	[role="banner"] h1 img {
+		max-height: 80px;
+	}
+
+	body * + * {
+		margin-top: @v-space/2;
+	}
+
+	.home-banner p {
+		margin-top: @v-space;
+	}
+
+	.intro img {
+		max-height: 80px;
+	}
+
+	.intro h1 {
+		font-size: 1.5em;
+	}
+
+	[role="banner"] h1 img {
+		max-width: 200px;
+	}
+
+	.container {
+		min-height: 500px;
+	}
+
+	.tags li {
+		margin-top: 0;
+	}
+
+	.tags a {
+		font-size: 1.125em;
+		padding: 0.5em 0.5em;
+		margin: 0;
+	}
+
+	.round-icon, .round-icon:hover {
+		width: 50px;
+		height: 50px;
+		background-size: 100% 100%;
+	}
+
+	[class^="group-"]:not(.export-header) > * {
+		display: block !important; 
+		width: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		margin-top: @v-space/2;
+	}
+
+	.tags {
+		padding: 0;
+	}
+
+	.tags.grid li {
+		display: block;
+		width: auto;
+	}
+
+	[class^="group-"] * + * {
+		margin-top: @v-space/2;
+	}
+
+	.symptom-highlighted {
+		margin-top: @v-space/2 !important;
+	}
+
+	[role="contentinfo"] ul, [role="contentinfo"] p {
+		display: block; 
+		width: auto;
+		text-align: left; 
+		font-size: 14px;
+	}
+
+	.accordion li > a + div > div {
+		margin-left: 0;
+	}
+
+	.right {
+		text-align: center;
+	}
+
+	.toolbar {
+		text-align: center;
+		font-size: 0.85em;
+	}
+
+	.button-group {
+		text-align: center;
+	}
+
+	.reverse > * {
+		float: none; 
+		margin: 0 0 @v-space/4 0;
+		text-align: center;
+		width: 100% !important;
+	}
+
+	.with-icon span {
+		max-width: 70%;
+	}
+
+	form[name="mailer"] label > span {
+		padding: 0;
+	}
+
+	div[class^="group"] [style] + [style] {
+		margin-top: @v-space/2;
+	}
+
+	div[class^="group"] [style] > div {
+		margin: 0;
+	}
+
+	.surgeries .button-group {
+		text-align: left;
+	}
+
+	.surgeries .right {
+		text-align: left;
+	}
+
+	form[name="pcsearch"] strong {
+		display: block; 
+		text-align: center;
+	}
+
+	.thumbs a {
+		width: 49%;
+	}
+
+	.actions button {
+		margin: @v-space/4 0;
+		width: 100%;
+	}
+
 }
 
-[role="banner"] h1 img {
-	max-height: 80px;
-}
+@media (max-width: 600px) {
 
-body * + * {
-	margin-top: @v-space/2;
-}
-
-.home-banner p {
-	margin-top: @v-space;
-}
-
-.intro img {
-	max-height: 80px;
-}
-
-.intro h1 {
-	font-size: 1.5em;
-}
-
-[role="banner"] h1 img {
-	max-width: 200px;
-}
-
-.container {
-	min-height: 500px;
-}
-
-.tags li {
-	margin-top: 0;
-}
-
-.tags a {
-	font-size: 1.125em;
-	padding: 0.5em 0.5em;
-	margin: 0;
-}
-
-.round-icon, .round-icon:hover {
-	width: 50px;
-	height: 50px;
-	background-size: 100% 100%;
-}
-
-[class^="group-"]:not(.export-header) > * {
-	display: block !important; 
-	width: auto !important;
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-	margin-top: @v-space/2;
-}
-
-.tags {
-	padding: 0;
-}
-
-.tags.grid li {
-	display: block;
-	width: auto;
-}
-
-[class^="group-"] * + * {
-	margin-top: @v-space/2;
-}
-
-.symptom-highlighted {
-	margin-top: @v-space/2 !important;
-}
-
-[role="contentinfo"] ul, [role="contentinfo"] p {
-	display: block; 
-	width: auto;
-	text-align: left; 
-	font-size: 14px;
-}
-
-.accordion li > a + div > div {
-	margin-left: 0;
-}
-
-.right {
-	text-align: center;
-}
-
-.toolbar {
-	text-align: center;
-	font-size: 0.85em;
-}
-
-.button-group {
-	text-align: center;
-}
-
-.reverse > * {
-	float: none; 
-	margin: 0 0 @v-space/4 0;
-	text-align: center;
-	width: 100% !important;
-}
-
-.with-icon span {
-	max-width: 70%;
-}
-
-form[name="mailer"] label > span {
-	padding: 0;
-}
-
-div[class^="group"] [style] + [style] {
-	margin-top: @v-space/2;
-}
-
-div[class^="group"] [style] > div {
-	margin: 0;
-}
-
-.surgeries .button-group {
-	text-align: left;
-}
-
-.surgeries .right {
-	text-align: left;
-}
-
-form[name="pcsearch"] strong {
-	display: block; 
-	text-align: center;
-}
-
-.thumbs a {
-	width: 49%;
-}
-
-.actions button {
-	margin: @v-space/4 0;
-	width: 100%;
-}
-
+	input[placeholder] { text-overflow: ellipsis; font-size: 0.95em; padding: 0.75em; }
+	::-moz-placeholder { text-overflow: ellipsis; font-size: 0.95em; padding: 0.75em; } /* firefox 19+ */
+	input:-moz-placeholder { text-overflow: ellipsis; font-size: 0.95em; padding: 0.75em; }
+	
 }
 
 @media print {

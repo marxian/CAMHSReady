@@ -1,4 +1,5 @@
-var st = require('st')
+'use strict';
+var st = require('st');
 var express = require('express');
 var fs = require('fs');
 var cons = require('consolidate');
@@ -12,7 +13,7 @@ var B = require('bluebird');
 
 var mailer = new postmark.Client(process.env.POSTMARK_API_KEY || 'dev');
 var bodyParser = require('body-parser');
-var conversion = require("phantom-html-to-pdf")();
+var conversion = require('phantom-html-to-pdf')();
 
 /**
  * Static files
@@ -34,20 +35,20 @@ app.use(st(st_conf));
  * Templating
  */
 cons.requires.handlebars = hbs;
-cons.requires.handlebars.registerHelper("math", function(lvalue, operator, rvalue, options) {
+cons.requires.handlebars.registerHelper('math', function(lvalue, operator, rvalue) {
     lvalue = parseFloat(lvalue);
     rvalue = parseFloat(rvalue);
         
     return {
-        "+": lvalue + rvalue,
-        "-": lvalue - rvalue,
-        "*": lvalue * rvalue,
-        "/": lvalue / rvalue,
-        "%": lvalue % rvalue
+        '+': lvalue + rvalue,
+        '-': lvalue - rvalue,
+        '*': lvalue * rvalue,
+        '/': lvalue / rvalue,
+        '%': lvalue % rvalue
     }[operator];
 });
 app.set('views', './views');
-app.engine('hbs', cons.handlebars)
+app.engine('hbs', cons.handlebars);
 app.set('view engine', 'hbs');
 
 /**
@@ -58,14 +59,14 @@ app.post('/api/email', function(req, res){
   req.body.permalink = config.baseUrl + req.body.permalink; 
   app.render('email', req.body, function(err, text){
     if (err) {
-      return res.status(500).send(error.message);
+      return res.status(500).send(err.message);
     }
     mailer.sendEmail({
       'From': config.mailer_from,
       'To': req.body.recipient,
       'Subject': config.mailer_subject,
       'TextBody': text
-    }, function(error, success){
+    }, function(error){
       if (error) {
         return res.status(500).send(error.message);
       }
@@ -79,14 +80,14 @@ app.post('/api/feedback', function(req, res){
   req.body.timestamp = new Date().toISOString();
   app.render('feedback', req.body, function(err, text){
     if (err) {
-      return res.status(500).send(error.message);
+      return res.status(500).send(err.message);
     }
     mailer.sendEmail({
       'From': config.mailer_from,
       'To': config.feedback_to,
       'Subject': config.feedback_subject,
       'TextBody': text
-    }, function(error, success){
+    }, function(error){
       if (error) {
         return res.status(500).send(error.message);
       }
@@ -95,7 +96,7 @@ app.post('/api/feedback', function(req, res){
   });
 });
 
-if (config.sms) {
+if (config.sms && process.env.NEXMO_KEY && process.env.NEXMO_SECRET) {
   var nexmo = require('easynexmo');
   nexmo.initialize(process.env.NEXMO_KEY, process.env.NEXMO_SECRET, 'https', process.env.NODE_ENV !== 'production');
   app.post('/api/sms', function(req, res){
@@ -115,7 +116,7 @@ if (config.sms) {
         res.sendStatus(200);
       }).catch(function(err){
         res.sendStatus(500).send(err);
-      })
+      });
     });
   });
 }

@@ -5,7 +5,7 @@
   <div id="picker-region" aria-live="assertive" tabindex="-1" class="content">
 	<h2 id="symptom-title"><span data-ng-hide="activeTag">What do you want to talk about?</span> <em class="symptom-highlighted" data-ng-show="activeTag"><span class="a11y-hide">Your chosen topic is&hellip;</span> {{activeTag}}</em></h2>
 	<p data-ng-hide="activeTag" id="symptoms">Choose a topic below to start making your checklist.</p>
-	<p data-ng-show="activeTag">Choose subtopics below by pressing the '+<span class="a11y-hide">add</span>' button.</p>
+	<p data-ng-show="activeTag">Add a statement to your checklist.</p>
 	<div id="picker" data-ng-switch="!!activeTag">
 	  <div data-ng-switch-when="false">
 		<ul class="tags" data-ng-class="{grid: grid}">

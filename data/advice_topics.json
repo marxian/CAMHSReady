@@ -8,16 +8,24 @@
     "slug": "how-can-camhs-help"
   },
   {
-    "title": "How can I get help?",
+    "title": "How can I get help from CAMHS?",
     "slug": "how-can-i-get-help"
+  },
+  {
+    "title": "What will CAMHS do once they know about me?",
+    "slug": "once-camhs-knows-about-me"
+  },
+  {
+    "title": "Can I change my appointment?",
+    "slug": "can-i-change-my-appointment"
   },
   {
     "title": "How long does it take to see CAMHS?",
     "slug": "how-long-does-it-take-to-see-camhs"
   },
   {
-    "title": "Where can I go for more support?",
-    "slug": "where-can-i-go-for-more-support"
+    "title": "Where else can I find support?",
+    "slug": "where-else-can-i-find-support"
   },
   {
     "title": "How will I find out if I'm able to see CAMHS?",
@@ -28,23 +36,24 @@
     "slug": "what-should-i-do-before-my-first-visit"
   },
   {
-    "title": "What happens at your first appointment?",
-    "slug": "what-happens-at-your-first-appointment"
+    "title": "What will happen at my first appointment?",
+    "slug": "what-will-happen-at-my-first-appointment"
   },
-  {
-    "title": "Can I change or cancel my appointment?",
-    "slug": "can-i-change-or-cancel-my-appointment"
-  },
+  
   {
     "title": "What happens after my first appointment?",
     "slug": "what-happens-after-my-first-appointment"
   },
   {
-    "title": "Who works at CAMHS?",
-    "slug": "who-works-at-camhs"
+    "title": "Who will I see?",
+    "slug": "who-will-i-see"
   },
   {
     "title": "Where is North Staffordshire CAMHS?",
     "slug": "where-is-camhs"
+  },
+  {
+    "title": "Confidentiality",
+    "slug": "confidentiality"
   }
 ]

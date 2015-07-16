@@ -5,7 +5,7 @@
     <div class="content">
 
 		<p class="status" data-ng-switch="selections.length">
-			<span data-ng-switch-default>Put the things you want to talk about in order.<span data-ng-show="touch"> To reorder items, drag them using the <span class="handle key icon-drag"></span> handle.</span></span>
+			<span data-ng-switch-default>Drag the topics into the order you want to talk about them.<span data-ng-show="touch"> You can drag them using the <span class="handle key icon-drag"></span> handle.</span></span>
 			<span data-ng-switch-when="0">Your checklist is empty. <a href="#/picker">Pick some items</a></span>
 		</p>
     <ol data-ui-sortable="{axis:'y', 'cursor':'move', 'handle': (touch && '.handle' || null)}" data-ng-model="selections">

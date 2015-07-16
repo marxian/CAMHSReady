@@ -417,14 +417,14 @@ angular.module('docready').value('symptoms_content', [
   {
     "title": "How long does it take to see CAMHS?",
     "slug": "how-long-does-it-take-to-see-camhs",
-    "body": "<p>CAMHS always tries to see people as quickly as possible once we have been given their details. However, because lots of people are finding they need help or support it can sometimes take up to 18 weeks for an appointment.</p><p>Don’t let the potential waiting time stop you from speaking to someone about what’s going on in your life. There are plenty of other places to get help. See the <a href=\"#/advice?topic=where-can-i-go-for-more-support\">'Where can I go for more support?'</a> section below for more information.</p>",
+    "body": "<p>CAMHS always tries to see people as quickly as possible once we have been given their details. However, because lots of people are finding they need help or support it can sometimes take up to 18 weeks for an appointment.</p><p>Don’t let the potential waiting time stop you from speaking to someone about what’s going on in your life. There are plenty of other places to get help. See the <a href=\"#/advice?topic=where-else-can-i-find-support\">'Where can I go for more support?'</a> section below for more information.</p>",
     "topic": "how-long-does-it-take-to-see-camhs"
   },
   {
     "title": "Where else can I find support?",
     "slug": "where-can-i-go-for-more-support",
     "body": "<p>There are lots of places beyond CAMHS that can also provide expert support with the difficulties you are having.</p><p>Sometimes after understanding your situation, we may realise that one of these services is better suited than we are to helping you. Or you may just want to get some extra support whilst you are waiting for your CAMHS appointment.</p><p>These resources are a mixture of websites, phone lines and face to face support.<ul><li><a href=\"http://www.changes.org.uk\" target=\"_blank\">Changes Health and WellBeing</a> - A mental health charity in Staffordshire</li><li><a href=\"http://www.childline.org.uk\" target=\"_blank\">Childline</a> - Call 0800 1111. You can talk to Childline 24 hours a day, seven days a week about any worries you have. It’s free and the telephone number won’t show up on your bill.</li><li><a href=\"http://www.thedoveservice.org.uk\" target=\"_blank\">Dove</a> - Provides counselling and support to children & young people over the age of four, and their families who have suffered bereavement, life-changing illness or significant loss</li><li><a href=\"http://www.midstaffsmind.co.uk\" target=\"_blank\">Mid Staffs Mind</a> - A local registered charity offering confidential support, advice and information to people in the Mid Staffs area with mental health issues.</li><li><a href=\"http://www.rethink.org\" target=\"_blank\">ReThink</a> - National website with advice about looking after your mental health. Also provide local face-to-face mental health services and support in Staffordshire.</li><li><a href=\"http://www.youngminds.org.uk\" target=\"_blank\">Young Minds</a> - A website offering information to young people and children about mental health and emotional wellbeing. Also, has links to online support.</li></ul></p>",
-    "topic": "where-can-i-find-support"
+    "topic": "where-else-can-i-find-support"
   },
   {
     "title": "What should I do before my first visit?",

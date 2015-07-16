@@ -3,8 +3,15 @@
 		<h1 id="page-title">Make Your Checklist</h1>
   </div>
   <div id="picker-region" aria-live="assertive" tabindex="-1" class="content">
+
 	<h2 id="symptom-title"><span data-ng-hide="activeTag">What do you want to talk about?</span> <em class="symptom-highlighted" data-ng-show="activeTag"><span class="a11y-hide">Your chosen topic is&hellip;</span> {{activeTag}}</em></h2>
-	<p data-ng-hide="activeTag" id="symptoms">Choose a topic below to start making your checklist.</p>
+	
+	<p data-ng-hide="activeTag">Making a checklist helps you plan and remember what you want to say at CAMHS.</p>
+
+	<p data-ng-hide="activeTag">Choose a topic below to start making your checklist. You can export it when you are finished.</p>
+	
+	<p data-ng-hide="activeTag">P.S. Your checklist is completely private and nothing you select is stored on our servers, your phone or device. See our <a href="#/advice?topic=what-should-i-do-before-my-first-visit&item=camhsready-and-your-privacy">privacy section</a> for more details.</p>
+
 	<p data-ng-show="activeTag">Add a statement to your checklist.</p>
 	<div id="picker" data-ng-switch="!!activeTag">
 	  <div data-ng-switch-when="false">

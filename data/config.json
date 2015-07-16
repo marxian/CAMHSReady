@@ -1,12 +1,12 @@
 {
   "ga_code": "pending",
-  "app_name": "CAMHSReady",
-  "app_domain": "CAMHSReady.org",
+  "app_name": "CAMHS Ready",
+  "app_domain": "camhsready.org",
   "baseUrl": "http://www.camhsready.org",
   "mailer_from":  "hello@camhsready.org",
-  "mailer_subject": "CAMHSReady Checklist",
+  "mailer_subject": "CAMHS Ready Checklist",
   "feedback_to": "hello@camhsready.org",
-  "feedback_subject": "CAMHSReady Feedback",
+  "feedback_subject": "CAMHS Ready Feedback",
   "sms": true,
-  "sms_from": "CAMHSReady"
+  "sms_from": "CAMHS Ready"
 }

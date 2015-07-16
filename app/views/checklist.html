@@ -6,7 +6,7 @@
 
 		<p class="status" data-ng-switch="selections.length">
 			<span data-ng-switch-default>Put the things you want to talk about in order.<span data-ng-show="touch"> To reorder items, drag them using the <span class="handle key icon-drag"></span> handle.</span></span>
-			<span data-ng-switch-when="0">Your checklist is empty. <a href="#/picker">Pick some items</a>?</span>
+			<span data-ng-switch-when="0">Your checklist is empty. <a href="#/picker">Pick some items</a></span>
 		</p>
     <ol data-ui-sortable="{axis:'y', 'cursor':'move', 'handle': (touch && '.handle' || null)}" data-ng-model="selections">
         <li data-ng-class="{handle: touch}" data-ng-repeat="symptom in selections" data-ng-animate="{enter:'animated fadeInUp', leave:'animated fadeOutDown'}"><i>{{$index+1}}</i>{{symptom.title}} <span data-ng-show="touch" class="handle icon-drag"></span> <button data-ng-click="deselect(symptom)"><span class="a11y-hide">delete item</span> &#x274c;</button>

@@ -6,7 +6,7 @@
 
 .icon-CAMHS_HP_2 { background-image: url(png/CAMHS_HP_2.png); background-repeat: no-repeat; }
 
-.icon-can-i-change-or-cancel-my-appointment { background-image: url(png/can-i-change-or-cancel-my-appointment.png); background-repeat: no-repeat; }
+.icon-can-i-change-my-appointment { background-image: url(png/can-i-change-my-appointment.png); background-repeat: no-repeat; }
 
 .icon-confidentiality { background-image: url(png/confidentiality.png); background-repeat: no-repeat; }
 
@@ -36,8 +36,6 @@
 
 .icon-how-to-speak-to-your-friends-and-family-about-camhs { background-image: url(png/how-to-speak-to-your-friends-and-family-about-camhs.png); background-repeat: no-repeat; }
 
-.icon-how-will-i-find-out-if-im-able-to-see-camhs { background-image: url(png/how-will-i-find-out-if-im-able-to-see-camhs.png); background-repeat: no-repeat; }
-
 .icon-howitworks_1 { background-image: url(png/howitworks_1.png); background-repeat: no-repeat; }
 
 .icon-howitworks_2 { background-image: url(png/howitworks_2.png); background-repeat: no-repeat; }
@@ -47,6 +45,8 @@
 .icon-info { background-image: url(png/info.png); background-repeat: no-repeat; }
 
 .icon-know-your-rights { background-image: url(png/know-your-rights.png); background-repeat: no-repeat; }
+
+.icon-once-camhs-knows-about-me { background-image: url(png/once-camhs-knows-about-me.png); background-repeat: no-repeat; }
 
 .icon-pencil { background-image: url(png/pencil.png); background-repeat: no-repeat; }
 
@@ -58,18 +58,18 @@
 
 .icon-what-happens-after-my-first-appointment { background-image: url(png/what-happens-after-my-first-appointment.png); background-repeat: no-repeat; }
 
-.icon-what-happens-at-your-first-appointment { background-image: url(png/what-happens-at-your-first-appointment.png); background-repeat: no-repeat; }
-
 .icon-what-is-a-mental-health-record { background-image: url(png/what-is-a-mental-health-record.png); background-repeat: no-repeat; }
 
 .icon-what-is-camhs { background-image: url(png/what-is-camhs.png); background-repeat: no-repeat; }
 
 .icon-what-should-i-do-before-my-first-visit { background-image: url(png/what-should-i-do-before-my-first-visit.png); background-repeat: no-repeat; }
 
+.icon-what-will-happen-at-my-first-appointment { background-image: url(png/what-will-happen-at-my-first-appointment.png); background-repeat: no-repeat; }
+
 .icon-what-will-happen-when-i-visit-the-gp { background-image: url(png/what-will-happen-when-i-visit-the-gp.png); background-repeat: no-repeat; }
 
-.icon-where-can-i-go-for-more-support { background-image: url(png/where-can-i-go-for-more-support.png); background-repeat: no-repeat; }
+.icon-where-else-can-i-find-support { background-image: url(png/where-else-can-i-find-support.png); background-repeat: no-repeat; }
 
 .icon-where-is-camhs { background-image: url(png/where-is-camhs.png); background-repeat: no-repeat; }
 
-.icon-who-works-at-camhs { background-image: url(png/who-works-at-camhs.png); background-repeat: no-repeat; }
+.icon-who-will-i-see { background-image: url(png/who-will-i-see.png); background-repeat: no-repeat; }

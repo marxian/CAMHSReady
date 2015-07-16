@@ -561,9 +561,15 @@ angular.module('docready').value('symptoms_content', [
   {
     "title": "Where is North Staffordshire CAMHS?",
     "slug": "where-is-camhs",
-    "body": "<p></p><p></p><p>Click on the name of a CAMHS site below to show its location on Google Maps. You can use this to get directions to the site, as well as using streetview to see images of the buildings.</p><p><ul><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Blurton+Health+Centre/@52.9732298,-2.1572043,16z/data=!4m2!3m1!1s0x487a69104ae97061:0xf7c0aa05462c1702\">Blurton</a> - Blurton Health Centre, Ripon Road, Stoke-on-Trent, Staffordshire ST3 3BS</li><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Canal+Arm,+Festival+Park,+Stoke-on-Trent+ST1+5UR/@53.0254765,-2.1967638,18.52z/data=!4m2!3m1!1s0x487a68209d545ccb:0xb95cd16550830b77\">Etruria</a> - The Boat House, 1 Canal Arm, Festival Park, Etruria, Stoke-on-Trent (NB use street address for directions because postcode takes you to wrong side of the river)</li><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Ashlands+Mental+Health+Resource+Centre/@53.011866,-2.220874,17z/data=!3m1!4b1!4m2!3m1!1s0x487a6808d85d29b3:0x6d6fa51c038a831c\">Newcastle</a> - Ashlands Mental Health Resource Centre, 35 North Street, Newcastle, ST5 1AZ</li><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Connect+Camhs+%26+First+Steps/@53.05951,-2.2146417,15z/data=!4m2!3m1!1s0x0:0xb387a03dcc19edfd\">Tunstall</a> - CAMHS and First Steps Building , Roundwell Street, Tunstall, ST6 5JJ</li></ul></p>",
+    "body": "<p>North Staffordshire CAMHS is based across four separate local sites.</p><p>The CAMHS team try their hardest to see you at the location that suits you best. This could be the one nearest to your home or school. When you or your parents/carer book your appointment you will be told which location to go to.</p><p>Click on the name of a CAMHS site below to show its location on Google Maps. You can use this to get directions to the site, as well as using streetview to see images of the buildings.</p><p><ul><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Blurton+Health+Centre/@52.9732298,-2.1572043,16z/data=!4m2!3m1!1s0x487a69104ae97061:0xf7c0aa05462c1702\">Blurton</a> - Blurton Health Centre, Ripon Road, Stoke-on-Trent, Staffordshire ST3 3BS</li><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Canal+Arm,+Festival+Park,+Stoke-on-Trent+ST1+5UR/@53.0254765,-2.1967638,18.52z/data=!4m2!3m1!1s0x487a68209d545ccb:0xb95cd16550830b77\">Etruria</a> - The Boat House, 1 Canal Arm, Festival Park, Etruria, Stoke-on-Trent (NB use street address for directions because postcode takes you to wrong side of the river)</li><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Ashlands+Mental+Health+Resource+Centre/@53.011866,-2.220874,17z/data=!3m1!4b1!4m2!3m1!1s0x487a6808d85d29b3:0x6d6fa51c038a831c\">Newcastle</a> - Ashlands Mental Health Resource Centre, 35 North Street, Newcastle, ST5 1AZ</li><li><a target=\"_blank\" href=\"https://www.google.co.uk/maps/place/Connect+Camhs+%26+First+Steps/@53.05951,-2.2146417,15z/data=!4m2!3m1!1s0x0:0xb387a03dcc19edfd\">Tunstall</a> - CAMHS and First Steps Building , Roundwell Street, Tunstall, ST6 5JJ</li></ul></p>",
     "topic": "where-is-camhs"
-  }
+  },
+  {
+    "title": "Confidentiality?",
+    "slug": "confidentiality",
+    "body": "<p>Everything you say to staff at North Staffordshire CAMHS is confidential. This means that we are not allowed to tell other people that you have been to see us or what you said without your permission.</p><p>When we talk to you we may write notes about what you have said. These are also kept confidential in the same way as the things you say to us.</p><p>Confidentiality is important to us. This means the information you provide to us will not be shared unless you give us permission, or if there is a situation where we must act to keep you or someone else safe. </p><p>If we need to share any of your information with the people who care for you (this could be parents, carers or other agencies) to help them look after you, we will ask for your permission first and we will tell you what we have shared.</p><p>If there is a situation where we must act to keep you or someone else safe and you don’t want to or can’t give permission, we may have to break confidentiality to share some information.</p>",
+    "topic": "confidentiality"
+  },
 ]
 );angular.module('docready').value('advice_topics_content', [
   {
@@ -595,10 +601,6 @@ angular.module('docready').value('symptoms_content', [
     "slug": "where-else-can-i-find-support"
   },
   {
-    "title": "How will I find out if I'm able to see CAMHS?",
-    "slug": "how-will-i-find-out-if-im-able-to-see-camhs"
-  },
-  {
     "title": "What should I do before my first visit?",
     "slug": "what-should-i-do-before-my-first-visit"
   },
@@ -618,6 +620,10 @@ angular.module('docready').value('symptoms_content', [
   {
     "title": "Where is North Staffordshire CAMHS?",
     "slug": "where-is-camhs"
+  },
+  {
+    "title": "Confidentiality",
+    "slug": "confidentiality"
   }
 ]);angular.module('docready').value('supplementary_content', [
   {

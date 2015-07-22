@@ -16,9 +16,9 @@
           <option value="Friend">Friend</option>
           <option value="Internet">Internet</option>
           <option value="Leaflets">Leaflets</option>
-          <option value="Other: ">Other (please specify)</option>
+          <option value="Other">Other (please specify)</option>
         </select>
-        <input type="text" data-ng-show="feedback.referral.indexOf('Other') === 0" data-ng-model="feedback.referral" />
+        <input type="text" placeholder="please specify" data-ng-show="feedback.referral === 'Other'" data-ng-model="feedback.referralOther" />
       </div>
       <label for="appointment">
         <input type="checkbox" id="appointment" data-ng-model="feedback.appointment" /> 

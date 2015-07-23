@@ -618,7 +618,7 @@ angular.module('docready').value('symptoms_content', [
     "slug": "who-will-i-see"
   },
   {
-    "title": "Where is North Staffordshire CAMHS?",
+    "title": "Where is CAMHS?",
     "slug": "where-is-camhs"
   },
   {

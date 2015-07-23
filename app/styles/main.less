@@ -75,11 +75,11 @@
 @yellow-color-darker: darken(@yellow-color, 20%);
 @yellow-color-lighter: lighten(@yellow-color, 25%);
 
-@blue-color: #62C1C2;
-@blue-color-darker: darken(@blue-color, 20%);
+@blue-color: #5CD9CD;
+@blue-color-darker: #2A546B;
 @blue-color-lighter: lighten(@blue-color, 37%);
 
-@red-color: #EC6D6F;
+@red-color: #E44E68;
 @red-color-darker: darken(@red-color, 20%);
 @red-color-lighter: lighten(@red-color, 25%);
 
@@ -306,7 +306,7 @@ header nav li {
 }
 
 header nav a, header nav a:visited {
-	color: @dark-grey;
+	color: @blue-color-darker;
 	border: 0;
 	font-size: 1.125em;
 	padding-left: 1.66em;
@@ -363,7 +363,8 @@ img.center-image {
 }
 
 .home-banner img {
-	max-height: 500px;
+    height: 2.75em;
+    vertical-align: -1.3em;
 }
 
 .home-banner p {
@@ -712,7 +713,7 @@ label + select {
 
 .embed:after {
 	display: inline-block; 
-	background: @yellow-color;
+	background: @blue-color;
 	font-family: @family-main;
 	padding: 0.5em;
 	content: 'Press CTRL + C to copy!';
@@ -879,7 +880,7 @@ li.handle {
 */
 
 button, a[role="button"], input[type="submit"], input[type="button"], a.button {
-	background: @blue-color;
+	background: @red-color;
 	color: @font-color-light;
 	padding: @slim-spacing @slim-spacing*3;
 	border: 0;
@@ -1120,8 +1121,8 @@ address {
 }
 
 .with-icon.button, .introduction .button, .actions button {
-	background: @yellow-color;
-	color: @font-color;
+	background: @red-color;
+	color: @font-color-light;
 }
 
 .with-icon span {
@@ -1211,7 +1212,7 @@ address {
 [role="banner"] h1 img {
     height: auto;
     max-height: 100px;
-    max-width: 160px;
+    max-width: 180px;
     width: 100%;
 }
 
@@ -1364,7 +1365,7 @@ ol h3 {
 }
 
 .tags a, .symptom-highlighted {
-	background: @blue-color;
+	background: @blue-color-darker;
 	border-radius: 40px;
 	padding: @v-space/2 @v-space;
 	margin: 6px 0;
@@ -1378,7 +1379,7 @@ ol h3 {
 }
 
 .tags a:hover, .tags a:focus {
-	background: @blue-color-darker;
+	background: @blue-color;
 	outline: none;
 }
 
@@ -1437,7 +1438,11 @@ iframe {
 .intro {
 	text-align: left;
 	padding: 2.25em 1.5em;
-	background: @font-color;
+	background: @blue-color;
+}
+
+.intro * {
+	color: @blue-color-darker;
 }
 
 .intro h1 {
@@ -1447,10 +1452,12 @@ iframe {
 
 .intro > h1, .intro > img {
 	display: block;
-	color: #fff;
 	vertical-align: middle;
-	margin: 0 auto;
     max-width: 820px;
+}
+
+.intro > h1 {
+	margin: 0.5em auto 0;
 }
 
 .intro > img {
@@ -1558,7 +1565,7 @@ li:nth-child(3n + 2) h3 span[class^="icon-"] {
 }
 
 li:nth-child(3n + 3) h3 span[class^="icon-"] {
-	background-color: @yellow-color;
+	background-color: @red-color;
 }
 
 h3 span[class^="icon-"] + span {

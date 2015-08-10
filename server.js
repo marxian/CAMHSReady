@@ -140,6 +140,8 @@ app.get('/api/pdf', function(req, res){
         pdf.stream.pipe(res);
       });
     });
+    //console.log('rendering as html');
+    //res.render('pdf', data);
   });
 });
 

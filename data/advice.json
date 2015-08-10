@@ -32,7 +32,7 @@
   {
     "title": "Contact CAMHS yourself",
     "slug": "contact-camhs-yourself",
-    "body": "<p>You have the option to contact CAMHS directly to request an appointment. Call the North Stafforshire CAMHS Team on 0300 123 0984 and we will talk you through the process.</p><p>We always recommend that you speak to a trusted adult or Childline first to help get their advice on your situation.</p><p>Be aware that CAMHS is not an emergency service, so if you require urgent help please dial 999.</p>",
+    "body": "<p>You have the option to contact CAMHS directly to request an appointment. Call the North Stafforshire CAMHS Team on 0300 123 0984 and we will talk you through the process.</p><p>We always recommend that you speak to a trusted adult or <a href=\"http://www.childline.org.uk\" target=\"_blank\">Childline</a> first to help get their advice on your situation.</p><p>Be aware that CAMHS is not an emergency service, so if you require urgent help please dial 999.</p>",
     "topic": "how-can-i-get-help"
   },
   {

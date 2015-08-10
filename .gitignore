@@ -10,3 +10,4 @@ libpeerconnection*
 .bower-cache
 .bower-registry
 npm-debug.log
+newrelic_agent.log

@@ -405,7 +405,7 @@ angular.module('docready').value('symptoms_content', [
   {
     "title": "What will CAMHS do once they know about me?",
     "slug": "once-camhs-knows-about-me",
-    "body": "<p>Once CAMHS have received your details, they will look at your situation to identify the best form of help to suit your needs.</p><p>Sometimes we may find that another organisation could better give you support. If that happens, we’ll work with you to help you get in touch with that service. You can use the <a href=\"#/advice?topic=where-can-i-go-for-more-support\">'Where else can I get more support?'</a> section below to see which other services we may recommend.</p><p>If we decide that you’d benefit from seeing someone from CAMHS, we’ll get in touch with you by letter to explain how to make an appointment.</p><p>Once you’ve made an appointment, you’ll receive a follow up letter letting you know when and where your appointment is and who you’ll see.</p>",
+    "body": "<p>Once CAMHS have received your details, they will look at your situation to identify the best form of help to suit your needs.</p><p>Sometimes we may find that another organisation could better give you support. If that happens, we’ll work with you to help you get in touch with that service. You can use the <a href=\"#/advice?topic=where-else-can-i-find-support\">'Where else can I get more support?'</a> section below to see which other services we may recommend.</p><p>If we decide that you’d benefit from seeing someone from CAMHS, we’ll get in touch with you by letter to explain how to make an appointment.</p><p>Once you’ve made an appointment, you’ll receive a follow up letter letting you know when and where your appointment is and who you’ll see.</p>",
     "topic": "once-camhs-knows-about-me"
   },
   {
@@ -459,7 +459,7 @@ angular.module('docready').value('symptoms_content', [
   {
     "title": "Where will it be?",
     "slug": "where-will-it-be",
-    "body": "<p>We will let you know where to meet us when you make your appointment. To get directions or to view images of our main buildings, please use the ‘Where is CAMHS?’ section below.</p><p>Your appointment will take place in a private room in one of our buildings, so that you and the person you see can talk privately together.</p>",
+    "body": "<p>We will let you know where to meet us when you make your appointment. To get directions or to view images of our main buildings, please use the <a href=\"#/advice?topic=where-is-camhs\">Where is CAMHS?</a> section below.</p><p>Your appointment will take place in a private room in one of our buildings, so that you and the person you see can talk privately together.</p>",
     "topic": "what-will-happen-at-my-first-appointment"
   },
   {
@@ -477,7 +477,7 @@ angular.module('docready').value('symptoms_content', [
   {
     "title": "Will they take notes?",
     "slug": "will-they-take-notes",
-    "body": "<p>The person you are seeing will usually make some notes during your visit to help them remember later on what you discussed. See our confidentiality section below for more about how we look after your information.</p>",
+    "body": "<p>The person you are seeing will usually make some notes during your visit to help them remember later on what you discussed. See our <a href=\"#/advice?topic=confidentiality\">confidentiality section</a> below for more about how we look after your information.</p>",
     "topic": "what-will-happen-at-my-first-appointment"
   },
   {

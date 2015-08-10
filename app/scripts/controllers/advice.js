@@ -14,15 +14,19 @@ angular.module('docready')
     $scope.topics = initData(adviceService.topics, 'topic');
     $scope.items = initData(adviceService.items, 'item');
 
-    if ($scope.item || $scope.topic) {
-      $timeout(function(){
-        var t = $scope.item || $scope.topic;
-        var st = $('[data-slug='+t.slug+']').offset().top - $('header').height();
-        $('html,body').animate({
-          scrollTop: st
-        }, 'fast');
-      }, 500);
+    function opener(){
+      if ($scope.item || $scope.topic) {
+        $timeout(function(){
+          var t = $scope.item || $scope.topic;
+          var st = $('[data-slug='+t.slug+']').offset().top - $('header').height();
+          $('html,body').animate({
+            scrollTop: st
+          }, 'fast');
+        }, 500);
+      }
     }
+
+    opener();
 
     $scope.setItem = function(slug) {
       $location.search('item', slug);
@@ -35,6 +39,24 @@ angular.module('docready')
     $scope.track = function(type){
       Analytics.trackPage($location.path() + '/' + type);
     };
+
+    $scope.$on('$locationChangeSuccess', function(){
+      // Hurried hackin to make links work internally on the advice scetion. God what a mess
+      var st = _.pick($location.search(), 'topic', 'item');
+      var internal = false;
+      if (!_.isEmpty(st)) {
+        _.each(st, function(v,k){
+          var data_item = _.findWhere(adviceService[k+'s'], {slug: v});
+          if ($scope[k] !== data_item) {
+            $scope[k] = data_item;
+            internal = true;
+          }
+        });
+        if (internal) {
+          opener();
+        }
+      }
+    });
 
   });
 

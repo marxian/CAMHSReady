@@ -79,6 +79,7 @@ app.post('/api/email', function(req, res){
       res.sendStatus(200);
     });
   });
+});
 
 
 app.post('/api/feedback', function(req, res){

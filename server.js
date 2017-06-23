@@ -8,11 +8,11 @@ var hbs = require('handlebars');
 var app = express();
 var dev = app.get('env') === 'development';
 var config = require('./data/config.json');
-var postmark = require('postmark');
+var helper = require('sendgrid').mail;
+var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 var querystring = require('querystring');
 var B = require('bluebird');
 
-var mailer = new postmark.Client(process.env.POSTMARK_API_KEY || 'dev');
 var bodyParser = require('body-parser');
 var conversion = require('phantom-html-to-pdf')();
 
@@ -39,7 +39,7 @@ cons.requires.handlebars = hbs;
 cons.requires.handlebars.registerHelper('math', function(lvalue, operator, rvalue) {
     lvalue = parseFloat(lvalue);
     rvalue = parseFloat(rvalue);
-        
+
     return {
         '+': lvalue + rvalue,
         '-': lvalue - rvalue,
@@ -57,24 +57,30 @@ app.set('view engine', 'hbs');
  */
 app.use(bodyParser.json());
 app.post('/api/email', function(req, res){
-  req.body.permalink = config.baseUrl + req.body.permalink; 
+  req.body.permalink = config.baseUrl + req.body.permalink;
   app.render('email', req.body, function(err, text){
     if (err) {
       return res.status(500).send(err.message);
     }
-    mailer.sendEmail({
-      'From': config.mailer_from,
-      'To': req.body.recipient,
-      'Subject': config.mailer_subject,
-      'TextBody': text
-    }, function(error){
+    var from_email = new helper.Email(config.mailer_from);
+    var to_email = new helper.Email(req.body.recipient);
+    var content = new helper.Content('text/plain', text);
+    var mail = new helper.Mail(from_email, config.mailer_subject, to_email, content);
+    var request = sg.emptyRequest({
+      method: 'POST',
+      path: '/v3/mail/send',
+      body: mail.toJSON()
+    });
+
+    sg.API(request, function(error){
       if (error) {
-        return res.status(500).send(error.message);
+        res.status(500).send(error.message);
       }
       res.sendStatus(200);
     });
   });
 });
+
 
 app.post('/api/feedback', function(req, res){
   req.body.version = process.env.npm_package_version;
@@ -83,14 +89,19 @@ app.post('/api/feedback', function(req, res){
     if (err) {
       return res.status(500).send(err.message);
     }
-    mailer.sendEmail({
-      'From': config.mailer_from,
-      'To': config.feedback_to,
-      'Subject': config.feedback_subject,
-      'TextBody': text
-    }, function(error){
+    var from_email = new helper.Email(config.mailer_from);
+    var to_email = new helper.Email(config.feedback_to);
+    var content = new helper.Content('text/plain', text);
+    var mail = new helper.Mail(from_email, config.feedback_subject, to_email, content);
+    var request = sg.emptyRequest({
+      method: 'POST',
+      path: '/v3/mail/send',
+      body: mail.toJSON()
+    });
+
+    sg.API(request, function(error){
       if (error) {
-        return res.status(500).send(error.message);
+        res.status(500).send(error.message);
       }
       res.sendStatus(200);
     });
